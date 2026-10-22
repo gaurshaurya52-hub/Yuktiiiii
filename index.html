@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7c173c">
+<title>For Yuktii ❤️</title>
+<style>
+  :root { --rose:#ff6f91; --deep:#74183b; --cream:#fff7f8; --ink:#532238; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0; min-height:100vh; overflow-x:hidden; color:var(--ink);
+    font-family: ui-rounded, "Trebuchet MS", system-ui, sans-serif;
+    background: radial-gradient(circle at 20% 10%, #ffe0e8 0, transparent 35%),
+                radial-gradient(circle at 90% 70%, #ffd0dc 0, transparent 32%),
+                linear-gradient(135deg,#fff8fa,#ffe8ee 55%,#fff5f6);
+  }
+  .hearts { position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:0; }
+  .heart { position:absolute; bottom:-50px; opacity:.45; animation:floatUp linear infinite; filter:drop-shadow(0 4px 6px #d94c7440); }
+  @keyframes floatUp { from { transform:translateY(0) rotate(0deg); opacity:0; } 12% {opacity:.5} to {transform:translateY(-115vh) rotate(35deg);opacity:0;} }
+  main { position:relative; z-index:1; width:min(900px,100%); margin:auto; padding:22px 16px 50px; }
+  .topline { text-align:center; color:#a34465; font-size:.82rem; letter-spacing:.16em; text-transform:uppercase; margin:10px 0 20px; }
+  .hero { text-align:center; padding:clamp(28px,7vw,68px) 18px 42px; border:1px solid #ffffffb8; background:#ffffff9c; backdrop-filter:blur(10px); border-radius:30px; box-shadow:0 18px 55px #9e31531c; }
+  .heart-mark { display:inline-grid; place-items:center; width:74px; height:74px; border-radius:50%; background:linear-gradient(145deg,#ff8aa5,#e83f73); color:white; font-size:2rem; box-shadow:0 10px 28px #e83f7345; animation:pulse 1.8s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+  h1 { font-size:clamp(2.7rem,11vw,5.5rem); line-height:1; margin:22px 0 12px; letter-spacing:-.05em; color:var(--deep); }
+  .subtitle { font-size:clamp(1rem,3vw,1.25rem); color:#9b4564; margin:0 auto; max-width:570px; line-height:1.7; }
+  .divider { display:flex; align-items:center; justify-content:center; gap:12px; color:#e45c83; margin:25px 0; }
+  .divider:before,.divider:after { content:""; width:55px; height:1px; background:#efb2c3; }
+  .button { border:0; border-radius:999px; padding:15px 23px; font:inherit; font-weight:750; cursor:pointer; transition:transform .2s,box-shadow .2s; }
+  .button:hover { transform:translateY(-2px); }
+  .primary { background:linear-gradient(135deg,#f85f89,#cf2d63); color:white; box-shadow:0 9px 22px #d6336840; }
+  .soft { background:#fff0f4; color:#9c2b54; border:1px solid #f6c6d3; }
+  .section { margin-top:22px; padding:clamp(22px,5vw,36px); border-radius:26px; background:#ffffffb8; border:1px solid #ffffffd9; box-shadow:0 12px 35px #9e315310; }
+  h2 { margin:0 0 14px; font-size:clamp(1.5rem,5vw,2rem); color:var(--deep); }
+  p { line-height:1.85; }
+  .letter { font-size:1.02rem; white-space:pre-line; }
+  .note { color:#95506a; font-size:.9rem; }
+  .surprise-box { display:none; margin-top:22px; padding:24px 20px; border-radius:22px; background:linear-gradient(145deg,#fff0f4,#ffe0e9); border:1px solid #f4bfd0; text-align:center; animation:appear .65s ease both; }
+  .surprise-box.show { display:block; }
+  @keyframes appear { from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none} }
+  .surprise-box .big { font-size:2.3rem; }
+  .actions { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:22px; }
+  .footer { text-align:center; padding:28px 8px 0; color:#a45b74; font-size:.84rem; }
+  .tiny { font-size:.82rem; color:#a35a73; }
+  .burst { position:fixed; z-index:5; pointer-events:none; font-size:20px; animation:burst 1.25s ease-out forwards; }
+  @keyframes burst { 0%{opacity:1;transform:translate(0,0) scale(.6)} 100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(25deg) scale(1.5)} }
+  @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+<main>
+  <div class="topline">a little page, made with a lot of feelings</div>
+  <section class="hero">
+    <div class="heart-mark" aria-hidden="true">♥</div>
+    <h1>Yuktii<span style="color:#f15a86">.</span></h1>
+    <p class="subtitle">Some feelings are hard to fit into a message… so I made you a little corner of the internet. 💗</p>
+    <div class="divider">♡</div>
+    <button class="button primary" id="openBtn">Open your little surprise ✨</button>
+    <p class="tiny">Take your time. Open it whenever you feel like it.</p>
+  </section>
+
+  <section class="section">
+    <h2>Yuktii, please read this… 💌</h2>
+    <div class="letter">Yukti manjaa please 😭😭😭😭
+One last and final time, please 🙏
+
+Mujhe pata hai, kabhi-kabhi hum bahar se khush dikhte hain, jabki andar ki feelings itni simple nahi hoti. Main tumhari feelings ko assume nahi karna chahta—sirf apni baat honestly kehna chahta hoon.
+
+I love you, Yuktiii. ❤️
+I love you, I love you, I love you.
+
+Tum mere liye bahut special ho. Main chahta hoon ki tum khush raho, chahe tumhara decision jo bhi ho. Agar tum baat karna chaho, main dil se sununga. Aur agar tumhe space chahiye, main uski bhi respect karunga.
+
+Bas itna kehna tha: meri feelings real hain, aur tumhari feelings aur choice bhi mere liye important hain. 💗</div>
+    <p class="note">Made just for you, Yuktii — with honesty, care, and no pressure.</p>
+  </section>
+
+  <section class="section">
+    <h2>A tiny reminder 🌷</h2>
+    <p>Whatever happens, you deserve kindness, peace, and happiness. Thank you for being someone who means so much to me.</p>
+    <div class="actions">
+      <button class="button soft" id="heartBtn">Send a little heart 💖</button>
+      <button class="button soft" id="readBtn">Read the message again 💌</button>
+    </div>
+    <div class="surprise-box" id="surprise" aria-live="polite">
+      <div class="big">💗 🌸 💗</div>
+      <h2>For you, Yuktii</h2>
+      <p>Three little words, from the heart:</p>
+      <p style="font-size:clamp(1.8rem,7vw,2.8rem);font-weight:850;color:#c72c60;margin:8px 0">I LOVE YOU</p>
+      <p>Always wishing you warmth, laughter, and good things. ❤️</p>
+      <button class="button primary" id="moreBtn">One more little sparkle ✨</button>
+    </div>
+  </section>
+  <div class="footer">Made with ❤️ for Yuktii<br><span class="tiny">A personal page — just for this moment.</span></div>
+</main>
+<script>
+  const hearts = document.getElementById('hearts');
+  const heartChars = ['♥','♡','💗','💕','✦'];
+  for (let i=0;i<20;i++) {
+    const el=document.createElement('span');
+    el.className='heart'; el.textContent=heartChars[Math.floor(Math.random()*heartChars.length)];
+    el.style.left=(Math.random()*100)+'%';
+    el.style.fontSize=(12+Math.random()*23)+'px';
+    el.style.animationDuration=(9+Math.random()*13)+'s';
+    el.style.animationDelay=(-Math.random()*18)+'s';
+    hearts.appendChild(el);
+  }
+  function burst(x,y,count=14) {
+    for(let i=0;i<count;i++){
+      const el=document.createElement('span'); el.className='burst';
+      el.textContent=heartChars[Math.floor(Math.random()*heartChars.length)];
+      el.style.left=x+'px'; el.style.top=y+'px';
+      el.style.setProperty('--x',((Math.random()-.5)*240)+'px');
+      el.style.setProperty('--y',(-40-Math.random()*190)+'px');
+      document.body.appendChild(el); setTimeout(()=>el.remove(),1400);
+    }
+  }
+  const surprise=document.getElementById('surprise');
+  document.getElementById('openBtn').addEventListener('click',()=>{
+    surprise.classList.add('show');
+    surprise.scrollIntoView({behavior:'smooth',block:'center'});
+    burst(window.innerWidth/2,window.innerHeight*.65,24);
+  });
+  document.getElementById('heartBtn').addEventListener('click',()=>{
+    burst(window.innerWidth/2,window.innerHeight*.65,20);
+  });
+  document.getElementById('readBtn').addEventListener('click',()=>{
+    document.querySelector('.letter').scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.getElementById('moreBtn').addEventListener('click',()=>{
+    burst(window.innerWidth/2,window.innerHeight/2,32);
+  });
+</script>
+</body>
+</html>
